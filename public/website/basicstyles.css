@@ -1,0 +1,176 @@
+
+
+/**************************************************************
+
+Basics
+
+**************************************************************/
+
+body{margin:0 auto;
+	font-family:helvetica neue, sans-serif;
+	overflow:scroll;
+	
+	}
+	
+@font-face {
+	font-family: DeliciousRoman;
+	src: url(http://www.font-face.com/fonts/delicious/Delicious-Roman.otf);
+	font-weight:400;
+	}
+
+ul
+	{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	margin-top:20px;
+
+	}
+	
+li
+	{
+	display:inline;
+	}
+
+
+a  {text-decoration:none;
+	padding-right:20px;
+	font-size:1.125em;
+	font-weight:500;
+	color:gray;
+	}
+
+
+p{font-family:helvetica neue;
+	font-size:.875em;
+	font-weight:200;
+	line-height:20px;
+	margin-left:20px
+    }
+
+h2{
+	font-size:1.125em;
+	margin-left:20px;
+	margin-top:50%;
+	position:absolute;
+	}
+
+h1{
+	font-size:2.25em;
+	position:absolute;
+	margin-left:20px;
+	margin-top:10%;
+	color:#F58220;
+	}
+
+	
+.container{width:100%;
+		   height:auto;
+	       background:;
+		   position:none;
+	} /**main container that holds everything**/
+	
+	
+	
+/****************************************************************
+
+Fixed bar on top with logo and image sprites
+
+*****************************************************************/
+
+
+.navcontainer{width:100%;
+	height:60px;
+	position:fixed;
+	background-color:white;
+	opacity:100%;
+	z-index:2;
+	}
+	
+img.logo{
+	height:60px;
+	position:absolute;
+	background:;
+	margin-left:15px;
+	}
+
+#navlist{position:absolute;}
+#navlist li{padding:0;list-style:none;position:absolute;top:0;}
+#navlist li, #navlist a{height:60px;display:block;background:;}
+
+#practice{left:0px;width:60px;}
+#practice{background:url('images/sprite.png')0px 0px;}
+
+#projects{left:70px;width:60px;}
+#projects{background:url('images/sprite.png')-70px 0px;}
+
+#news{left:140px;width:60px;}
+#news{background:url('images/sprite.png')-140px 0px;}
+
+#contact{left:210px;width:60px;}
+#contact{background:url('images/sprite.png')-210px 0px;}
+
+#home{left:280px; width:60px}
+#home{background:url('images/sprite.png')-280px 0px;}
+
+	.containericon{float:right;
+		       width:340px;
+			   height:60px;
+			   background:;
+			   margin-right:5px;
+			   margin-top:-20px}	
+
+
+/****************************************************************
+
+Set of bars
+
+*****************************************************************/
+
+.bar{width:100%;
+	height:60px;
+	position:absolute;}
+	
+#spacecontainer{
+	margin-top:60px;;
+	background-color:;
+	}	
+	
+#pagetitle{
+	margin-top:120px;
+	background-color:;
+	}	
+	
+#navbar{
+	margin-top:180px;
+	background-color:;
+	margin-left:1.5%;
+	position:absolute;
+	}	
+	
+#paragraphheader{
+	margin-top:240px;
+	background-color:;
+	}	
+	
+	
+
+/****************************************************************
+
+Practice 
+
+*****************************************************************/
+
+.column{width:30%;
+	   height:auto;
+	   position:absolute;
+	   margin-top:300px;
+	   min-width:100px;
+	   }
+	
+#one {background:;}
+#two{background:;
+	margin-left:35%}
+#three {background:;
+	    margin-left:70%}
+	

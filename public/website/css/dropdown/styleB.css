@@ -1,0 +1,94 @@
+
+
+
+
+
+
+/*-------top_nav--------*/
+ul.top_nav{
+	width:453px;/*803*/
+	height:30px;/*49*/
+	padding:0px 0 0px 0px;
+	margin:0px 0px 0 0px;
+	float:left;
+
+}
+ul.top_nav li{
+	float:left; margin:0px 20px 0 0px;
+	padding-right:1px;
+	position:relative;
+	height:20px;
+	border:none;
+}
+ul.top_nav li.last{background:none}
+ul.top_nav li a{
+	text-decoration:none; font:bold 12px Arial, Helvetica, sans-serif; color:#98e0e7;
+	height:20px; padding:10px 5px 10px 5px;
+	/*-moz-border-radius:10px; -webkit-border-radius:10px ; border-radius:10px;*/
+	/*padding:0 11px;
+	font-size:11px;
+	line-height:31px;
+	color:#fff;
+	font-weight:bold;
+	background:url(file:///G|/jithun/new%20sliding%20jaquery/latest/jvcdropdown/image/top_nav_ahover.gif) no-repeat left -50px;*/
+}
+ul.top_nav li.last a{padding-right:18px; border:none; }
+/*ul.top_nav li a:hover, ul.top_nav li.slctNav a{background-position:left top; text-decoration:none; }*/
+ul.top_nav li a:hover{ background:#1a506d; color:#FFF !important;}
+ul.top_nav li a.actve{ background:#1a506d; color:#FFF !important;}
+.active{color:#FFF !important; }
+/*----sub_nav----*/
+ul.top_nav li ul{
+	width:200px;
+	height:auto;/*height:110px;*/
+	/*overflow:hidden;*/
+	float:left;
+	background:#1a4d69;
+	position:absolute;
+	left:-0px;
+	top:20px;
+	z-index:99999999;
+	display:none;
+}
+ul.top_nav li.last ul{left:auto; right:0}
+ul.top_nav li li{
+	width:190px;
+	padding:0 10px 5px 0px;
+	background:url(../../img/sub_nav_liBg.gif) repeat-x left bottom;
+	position:relative;
+	margin:10px 0 0 0px;
+border-bottom:dashed 1px #666;
+	
+}
+ul.top_nav li li a{
+	width:190px !important;/*215*/
+	padding:0 0px 0 10px;
+	line-height:19px;
+	
+	display:block;
+	color:#999;
+	font: bold 12px Arial, Helvetica, sans-serif !important;
+	
+	border:none;
+	
+}
+ul.top_nav li.last li a{padding-right:0; border:none;}
+
+
+/*ul.top_nav li li a:hover, ul.top_nav li li.slctNav a{background-color:#FFF; color:#000; border:none;}
+ul.top_nav li li.arrow a:hover, ul.top_nav li li.slctNav a{background-position:8px -95px; border:none;}*/
+
+/*----sub sub_nav----*/
+ul.top_nav li ul ul{
+	overflow:hidden;
+	left:215px;
+	top:0;
+	display:none;
+}
+ul.top_nav li.last ul ul{left:auto; right:0}
+ul.top_nav li li li{position:static}
+ul.top_nav li li.arrow li a{background:none; color:#666}
+ul.top_nav li li.arrow li a:hover{color:#fff}
+
+
+

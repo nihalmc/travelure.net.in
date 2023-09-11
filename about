@@ -1,0 +1,99 @@
+
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('abouts', function (Blueprint $table) {
+            $table->id();
+            $table->longText('text');
+            $table->string('image');
+            $table->string('comments')->nullable();
+            $table->timestamps();
+    });
+
+}
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('abouts');
+    }
+};
+
+
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class About extends Model
+{
+    protected $fillable =['text','image'];
+
+}
+
+
+namespace App\Http\Controllers;
+use Illuminate\Support\Facades\Storage;
+use App\Models\About;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Http\Request;
+
+class AboutController extends Controller
+{
+
+    public function index()
+    {
+
+        $about = About::orderBy('id','desc')->paginate(5);
+        return view('admin.about.index', compact('abouts'));
+
+    }
+
+    public function create()
+    {
+        return view('admin.about.create');
+    }
+
+    public function store(Request $request)
+    {
+        $request->validate([
+            'text' => 'required|string',
+            'image' => 'required|image',
+
+        ]);
+
+
+        $filename =$request->file('image')->hashName();
+        $imagePath ='uploads/about' .$filename;
+        $request->file('image')->storeAs('public/' .$imagePath);
+
+
+        $about = new About();
+        $about->text =$request->text;
+        $about->image =$imagePath;
+        $about->save();
+
+        return view('admin.about.create');
+    }
+
+
+}
+
+
+
+
+
+
+    

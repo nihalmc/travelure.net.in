@@ -1,0 +1,159 @@
+/* ============================== */
+
+/* ! Layout for desktop version   */
+
+/* ============================== */
+
+
+
+	body {
+
+		
+
+	}
+
+	
+
+
+
+/* ============================= */
+
+/* ! Layout for mobile version   */
+
+/* ============================= */
+
+
+
+@media handheld, only screen and (max-width: 767px) {
+
+
+
+	body {
+
+		
+
+	}
+
+
+
+}
+
+
+
+
+
+/* ========================================== */
+
+/* ! Provide higher res assets for iPhone 4   */
+
+/* ========================================== */
+
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+
+
+/*	.logo {
+
+		background: url(logo2x.jpg) no-repeat;
+
+		background-size: 212px 303px;
+
+	}*/
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+#mcs_container{position:relative;  margin:0px;   height:90%!important; padding:0 10px; }
+
+.customScrollBox{position:relative; height:90%; /*overflow:hidden;*/}
+
+.customScrollBox .container{position:relative;  top:0; height:auto !important; width:auto !important; background:none !important; }
+
+.customScrollBox .content{clear:both; padding-bottom:20px}
+
+.dragger_container{position:absolute; width:10px; top:35px; bottom:30px;   background:#b3b3b3; cursor:pointer -moz-border-radius:2px; -khtml-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; cursor:s-resize; max-height:450px !important;}
+
+.dragger{position:absolute; width:10px; height:60px; background:#000; text-align:center; line-height:60px; color:#666; overflow:hidden; cursor:pointer; -moz-border-radius:2px; -khtml-border-radius:2px; -webkit-border-radius:2px; border-radius:2px;}
+
+.dragger_pressed{position:absolute; width:4px; margin-left:-1px; height:60px; background:#999; text-align:center; line-height:60px; color:#666; overflow:hidden; -moz-border-radius:4px; -khtml-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; cursor:s-resize;}
+
+.scrollUpBtn, .scrollDownBtn{position:absolute; display:inline-block; width:14px; height:15px; margin-right:12px; text-decoration:none; right:0; filter:alpha(opacity=20); -moz-opacity:0.20; -khtml-opacity:0.20; opacity:0.20;}
+
+.scrollUpBtn{top:16px; background:url(../images/mcs_btnUp.png) center center no-repeat;}
+
+.scrollDownBtn{bottom:12px; background:url(../images/mcs_btnDown.png) center center no-repeat;}
+
+.scrollUpBtn:hover, .scrollDownBtn:hover{filter:alpha(opacity=60); -moz-opacity:0.60; -khtml-opacity:0.60; opacity:0.60;}
+
+
+
+#scrollbar{ height:90%; width:20px; position:absolute; right:0px; top:0px; }
+
+
+
+
+
+#mcs_page{ position:relative;  margin:0 10px;   height:100%; padding:0 10px;   }
+
+#mcs_page .customScrollBox{ margin-right:0px;}
+
+
+
+#mcs_page2{ position:relative;  margin:0 10px !important;   height:87%; padding:0 30px 0 0; background:#f3f3f3;   }
+
+
+
+.customScrollBox .content{ padding-right:20px;}
+
+
+
+
+
+
+
+h3.prolinks a.active,h3.prolinks a:hover{ color:#FF7300}
+
+.arcimg{ float:left; display:block; padding-right:10px;}
+
+.peoples{  display:block; padding:0px 0px; background:#e0e0e0 !important;  z-index:99999999999999999999999999999999999999 !important;}
+
+.infodata p{ background:#e0e0e0 !important;  z-index:99999999999999999999999999999999999999 !important;}
+
+.peoples li{ padding:0px; float:left; margin:5px 0px; border-bottom:1px solid #ccc; cursor:pointer; background:#f3f3f3 !important;}
+
+.peoples h3{ padding:5px 0px; font:bold 14px "open sans" !important;}
+
+.peoples h4{ font-size:14px;}
+
+.peoples li:hover,.peoples li.active { background:#e4dfdf !important;}
+
+.peoples li.active .infodata{ z-index:200}  
+
+.infodata{ position:absolute ; width:340px; height:auto !important;background:#e0e0e0 !important; padding-bottom:20px; top:0px; left:0; z-index:99999999999999999999999999999999999999 !important; display:none; }
+
+.contact_form label { width:500px; display:inline-block ; height:150px !important;background:#e0e0e0 !important; z-index:100000000000000000000000000000001 !important;
+
+	
+
+}
+
+@media screen and (max-width: 1280px) 
+{
+	.infodata{ position:absolute ; width:300px; height:auto !important;background:#e0e0e0 !important; padding-bottom:20px; top:0px; left:0; z-index:999999999999999999999999 !important; display:none; }
+}
+
+.minheight190{ min-height: 190px !important;}
+.minheight200{ min-height: 200px !important;}
